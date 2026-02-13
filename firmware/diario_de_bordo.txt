@@ -1,0 +1,25 @@
+================================ 12/02/2025 =========================
+
+* Instalação do pacote esp-idf-lib/dht 
+    idf.py add-component "CAMINHO_DA_PASTA"
+
+* Lembrar de instalar as dependencas pelo console da ESP-IDF, nao o proprio terminal
+    Se não abrir, usar >ESP-IDF: Open ESP-IDF Terminal
+
+================================ 13/02/2025 =========================
+
+* Após instalação de um componente, preencher o arquivo CMakeLists.txt DENTRO DA PASTA
+MAIN para informar a ESP-IDF que o pacote deve ser incluido na build do projeto.
+
+* Novos componentes sao inserido no arquivo idf_components.yml
+
+* Instalação do pacote maucke/sdcard para utilidades de cartão SD
+
+* Instalação do pacote espp/ads1x15 para utilidades do conversor ADS1x15
+
+* Organização dos componentes -> Hardware Abstraction Layer (HAL)
+    - Exemplo: Pasta components/sensor_controller contendo o import dos componentes e
+    os arquivos .c e .h para cada tipo de sensor_controller
+    - Cada pasta "___"_controller, adicionar um arquivo CMakeLists.txt informando
+    quais componentes devem ser incluidos na build
+

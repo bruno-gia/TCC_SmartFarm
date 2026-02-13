@@ -5,5 +5,6 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=/home/bgia/Documents/TCC/SmartFarm/firmware/build"
-  ]
+  ],
+  "idf.currentSetup": "/home/bgia/.espressif/v5.5.2/esp-idf"
 }
